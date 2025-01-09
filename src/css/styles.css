@@ -1,0 +1,166 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    font-family: "Roboto", serif
+}
+
+.header {
+    text-align: center;
+    background-color: #6200ea;
+    color: white;
+    padding: 1rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Exibe 6 colunas por padrão */
+    gap: 16px;
+    padding: 20px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-title {
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe5a;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Estilos para a imagem */
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Estilos para o campo de navegação */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Exibe 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 600px) {
+    .video-title {
+        font-size: 0.9rem;
+    }
+}
+
+
+.body-filmstrip {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.filmstrip {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    background-color: #333;
+}
+
+.filmstrip-wrapper {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.filmstrip-wrapper img {
+    width: 200px;
+    height: 40vh;
+    object-fit: cover;
+    margin: 1px;
+    
+}
+
+.container-links{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animação */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
