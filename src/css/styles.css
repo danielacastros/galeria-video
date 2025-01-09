@@ -135,7 +135,7 @@ nav a:hover {
 
 .filmstrip-wrapper {
     display: flex;
-    animation: scroll 10s linear infinite;
+    animation: scroll 40s linear infinite;
 }
 
 .filmstrip-wrapper img {
